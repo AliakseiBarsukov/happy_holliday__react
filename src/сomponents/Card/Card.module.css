@@ -1,11 +1,20 @@
 .card {
-    position: relative;
+    flex-grow: 1;
+    padding: 32px 0 15px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    max-width: 840px;
-    margin: 0 auto;
-    padding-top: 32px;
-    padding-bottom: 128px;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.image {
+    position: relative;
+    margin: auto;
+    display: flex;
     box-shadow: 0px 0px 50px rgba(96, 4, 50, 0.23);
+    font-size: 3px;
 }
 
