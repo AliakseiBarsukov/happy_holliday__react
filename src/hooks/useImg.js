@@ -15,7 +15,7 @@ export const useImg = holiday => {
             return response.json();
         })
         .then(data => {
-            if (data.IdImg) {
+            if (data.idImg) {
                 setData(data);
             }
         })

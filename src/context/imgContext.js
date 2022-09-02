@@ -10,7 +10,7 @@ export const ImgContextProvider = ({ children }) => {
 
     return (
         <imgContext.Provider value={{urlImg}}>
-            { children }
+            {children}
         </imgContext.Provider>
     )
 }

@@ -13,8 +13,8 @@ const Footer = () => (
         <Container>
             <div className={style.wrapper}>
                 <div className={style.contacts}>
-                    <p>Design: <a href='http://t.me/Mrshamallowww'>Anastasia Ilina</a></p>
-                    <p>Coder: <a href='http://t.me/AlekseiBarsukov'>Aliaksei Barsukov</a></p>
+                    <p>Design: <a href='http://t.me/Mrshamallowww' target="_blank" rel="noreferrer">Anastasia Ilina</a></p>
+                    <p>Coder: <a href='http://t.me/AlekseiBarsukov'target="_blank" rel="noreferrer">Aliaksei Barsukov</a></p>
                     <p>© HBCard, 2022</p>
                 </div>
 
