@@ -1,10 +1,10 @@
-import { useContext } from "react";
-import { imgContext } from "../../../context/imgContext";
+import { useSelector } from "react-redux";
 import CardBG from '../../../img/card-bg.jpeg';
 
 
 const ImageCard = (props) => {
-    const {urlImg} = useContext(imgContext)
+    const {urlImg} = useSelector(state => state.image);
+
     return (
         <img src={urlImg || CardBG} alt='Фон открытки' width={840} height={520}/>
     )

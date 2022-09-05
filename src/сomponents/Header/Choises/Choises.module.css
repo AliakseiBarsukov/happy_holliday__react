@@ -7,6 +7,11 @@
     font-size: 18px;
     background-color: #00c78b;
     color: #fff;
+    transition: background-color .3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #1fed94;
 }
 
 .wrapper {
@@ -38,6 +43,10 @@
 
 .item:last-child {
     margin-bottom: 0;
+}
+
+.LinkActive {
+    color: rgb(251, 255, 0);
 }
 
 @media (max-width: 1024px) {

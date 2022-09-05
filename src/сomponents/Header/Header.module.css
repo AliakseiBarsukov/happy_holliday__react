@@ -26,11 +26,15 @@
     font-size: 18px;
     background-color: #00c78b;
     color: #fff;
+    transition: background-color .3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #1fed94;
 }
 
 .button:disabled {
     background-color: #c5e1d9;
-
 }
 
 @media (max-width: 1024px) {

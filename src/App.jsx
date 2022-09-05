@@ -1,26 +1,23 @@
-import Footer from './сomponents/Footer/Footer';
-import Header from './сomponents/Header/Header';
+
 import Card from './сomponents/Card/Card';
-import { ImgContextProvider } from './context/imgContext';
+import EmptyCard from './сomponents/EmptyCard/EmptyCard';
+import { Route, Routes } from 'react-router-dom';
+import Layout from './сomponents/Layout/Layout';
 
 
 
 
-const wrapper = {
-  display: 'flex',
-  flexDirection: 'column',
-  height: '100vh',
-};
+
 
 const App = () => {
   return (
-    <div style={wrapper}>
-      <ImgContextProvider>
-        <Header />
-        <Card />
-        <Footer />
-      </ImgContextProvider>
-    </div>
+      <Routes>
+        <Route path='/' element={<Layout />}>
+          <Route index element={<EmptyCard />} />
+          <Route path='card/:holiday' element={<Card />} />
+        </Route>
+        <Route path='singleCard/:idText/:idImg' element={<Card />} />
+      </Routes>
   );
 }
 

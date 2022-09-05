@@ -18,14 +18,9 @@ const holidaysSlice = createSlice({
     name: 'holidays',
     initialState: {
         holidays: {},
-        holiday: '',
         loading: '',
     },
-    reducers: {
-        setHoliday(state, action) {console.log()
-            state.holiday = action.payload;
-        }
-    },
+    reducers: {},
     extraReducers: {
         [fetcHolidays.pending]: (state) => {
             state.loading = 'loading';
